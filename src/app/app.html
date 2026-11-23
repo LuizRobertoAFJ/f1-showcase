@@ -1,21 +1,62 @@
-<div>
-  <div class="flex justify-between items-center h-16 px-24 outline outline-[#303037]">
-    <img src="/Placeholder-F1_logo.jpg" width="100rem">
-    <div class="flex gap-x-6">
-      <a href="">Teams</a>
-      <a href="">Drivers</a>
-      <a href="">History</a>
-    </div>
-  </div>
-  <div class="flex justify-between items-center h-svh p-36">
+<header
+  class="fixed top-0 left-0 flex justify-between items-center h-16 w-full px-6 md:px-24 bg-[#010205] transition-transform duration-300">
+  
+  <button (click)="openSidebar()">Menu</button>
 
-    <div class="text-5xl">
-      <p>The <strong class=""><!--text-[#D31411]-->Pinnacle</strong></p>
-      <p>of global motorsport</p>
-    </div>
-    <div><img src="/Placeholder-F1_logo.jpg" width="450rem"></div>
+  <div class="absolute left-1/2 -translate-x-1/2 w-12 w- md:w-24">
+    <img src="/F1-Logo-White.png">
   </div>
 
-  <div class="h-96 bg-white">
+  <div>
+    <a href="">Placeholder</a>
+  </div>
+
+</header>
+
+<div class="h-svh md:bg-[url(/RB22.jpg)] md:bg-no-repeat md:bg-cover md:bg-[position:center_70%]">
+  <div class="grid justify-items-center md:justify-items-start content-center md:content-start h-full pt-16 md:pt-48 md:p-24 md:bg-linear-to-t md:from-40% md:to-[#010205]">
+    <span class="font-thin text-xl md:text-5xl">EXPERIENCE</span>
+    <span class="font-bold text-2xl md:text-7xl text-center md:text-start">THE PINNACLE OF MOTORSPORT</span>
   </div>
 </div>
+
+<div class="h-full bg-white text-black">
+  <div class="grid grid-cols-2 justify-items-center px-64 py-12 gap-48">
+    <div class="grid content-center">
+      <span class="text-5xl font-bold mb-12">HISTORY</span>
+      <p class="text-justify">The beginning of Formula 1 dates back to the 1950s, a period that marked the birth of
+        modern motorsport. The first official Formula 1 World Championship took place in 1950, with its opening race held at
+        Silverstone, England. During this era, legendary drivers such as Juan Manuel Fangio and Giuseppe Farina became
+        pioneers of the sport, competing in powerful and dangerous cars. Although technology was still developing and safety
+        measures were limited, Formula 1 quickly gained popularity around the world, establishing the foundations of the
+        exciting and competitive sport we know today.
+      </p>
+    </div>
+    <span class="w-125 h-150 bg-[url(/F1-1950.jpg)] bg-cover bg-no-repeat"></span>
+    <span class="w-125 h-150 bg-[url(/F1-2026.jpg)] bg-cover bg-no-repeat bg-center"></span>
+    <div class="grid content-center">
+      <span class="text-5xl font-bold mb-12">TODAY</span>
+      <p class="text-justify">In 2026, Formula 1 introduces a new generation of cars with smaller designs, active
+        aerodynamics, and redesigned hybrid engines. Audi joins the grid after taking over Sauber, while Cadillac becomes the
+        sport's 11th team, ending a period of 10 teams that had lasted since 2017. These changes bring new challenges for
+        drivers and teams as they adapt to the updated regulations and compete throughout the season.</p>
+    </div>
+    
+    
+  </div>
+  
+<!--
+    <div class="bg-blue-200">
+      <p>The Teams</p>
+      <p>2026</p>
+      <div class="grid md:grid-cols-2 gap-4 px-6 md:px-24 justify-items-center">
+        @for(team of teams; track team){
+          <div class="rounded-md p-6 h-64 w-full outline bg-red-200">{{ team }}</div>
+        }
+      </div>
+    </div>-->
+
+    <span class="text-5xl font-bold">CURRENT STANDINGS</span>
+    Hi im a table
+</div>
+
