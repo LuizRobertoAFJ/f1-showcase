@@ -1,8 +1,12 @@
 import { Component, signal } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterOutlet } from '@angular/router';
 
+
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MatIconModule, MatButtonModule, MatSidenavModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
